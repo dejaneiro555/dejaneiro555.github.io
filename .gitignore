@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Graphify local code graph (rebuilt by git hooks)
+graphify-out/
