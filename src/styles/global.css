@@ -27,6 +27,19 @@ body {
   font-size: 1.0625rem;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+
+  /* Keep the footer at the bottom on short pages */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1 {
+  text-wrap: balance;
 }
 
 h1,
@@ -111,6 +124,10 @@ a:hover {
   padding: 0;
   list-style: none;
   color: var(--text-muted);
+}
+
+.site-header a[aria-current='page'] {
+  color: var(--text);
 }
 
 .site-footer {

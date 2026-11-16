@@ -9,6 +9,8 @@ interface Props {
 const { title, description } = Astro.props;
 const siteName = 'Rio Gonzales';
 const pageTitle = title ? `${title} · ${siteName}` : siteName;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/og.png', Astro.site);
 
 // Add a page here once it exists, so the nav never links to a missing page.
 const navLinks: { href: string; label: string }[] = [
@@ -30,6 +32,20 @@ const gitHub = 'https://github.com/dejaneiro555';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#09090a" />
+
+    <!-- Link previews on LinkedIn, Slack, iMessage and similar -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rio Gonzales. People, software, hardware." />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
