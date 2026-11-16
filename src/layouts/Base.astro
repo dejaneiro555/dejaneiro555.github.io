@@ -11,7 +11,12 @@ const siteName = 'Rio Gonzales';
 const pageTitle = title ? `${title} · ${siteName}` : siteName;
 
 // Add a page here once it exists, so the nav never links to a missing page.
-const navLinks: { href: string; label: string }[] = [{ href: '/projects/', label: 'Projects' }];
+const navLinks: { href: string; label: string }[] = [
+  { href: '/projects/', label: 'Projects' },
+  { href: '/journey/', label: 'Journey' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
+];
 
 const linkedIn = 'https://www.linkedin.com/in/rwgonzales';
 const gitHub = 'https://github.com/dejaneiro555';
@@ -41,7 +46,6 @@ const gitHub = 'https://github.com/dejaneiro555';
                 </a>
               </li>
             ))}
-            <li><a href={linkedIn}>LinkedIn</a></li>
           </ul>
         </nav>
       </div>
