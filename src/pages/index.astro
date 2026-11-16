@@ -1,14 +1,117 @@
 ---
+import Base from '../layouts/Base.astro';
+
+// Cards become links when their pages are built.
+const featured = [
+  {
+    label: 'Project',
+    title: 'Perpetuity Machine',
+    text: 'A persistent, permission-aware memory layer for organizations, designed to sit beneath AI models and agents. In design.',
+  },
+  {
+    label: 'Project',
+    title: 'Care Navigator',
+    text: 'Referral coordination for patients, caregivers and navigators, built on synthetic data.',
+  },
+  {
+    label: 'Journey',
+    title: 'Electrical Engineering at ASU',
+    text: 'Starting January 2027, with as many computer engineering electives as I can take.',
+  },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Rio Gonzales</title>
-	</head>
-	<body>
-		<h1>Rio Gonzales</h1>
-		<p>Site under construction.</p>
-	</body>
-</html>
+<Base
+  description="Rio Gonzales: from a career in HR and analytics to AI/ML and electrical engineering."
+>
+  <section class="hero wrap">
+    <p class="label accent">Engineer in progress</p>
+    <h1>
+      I spent my career understanding people. Now I’m learning to build <strong>the machines</strong>.
+    </h1>
+    <p class="lede muted">
+      I’m Rio Gonzales. I started out in computer engineering, built a career in HR and analytics,
+      and I’m returning to what I’ve always been wired for.
+    </p>
+  </section>
+
+  <section class="wrap" aria-labelledby="featured-heading">
+    <h2 id="featured-heading" class="label muted">Current work</h2>
+    <ul class="cards">
+      {featured.map((item) => (
+        <li>
+          <p class="label accent">{item.label}</p>
+          <h3>{item.title}</h3>
+          <p class="muted">{item.text}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: clamp(4rem, 12vw, 8rem) clamp(3rem, 8vw, 5rem);
+  }
+
+  h1 {
+    max-width: 20ch;
+    margin-block: 1.25rem 1.5rem;
+    font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+    font-weight: 300;
+    line-height: 1.12;
+    letter-spacing: 0.01em;
+  }
+
+  h1 strong {
+    font-weight: 500;
+  }
+
+  .lede {
+    max-width: 34rem;
+  }
+
+  h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .cards {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-block: 1px solid var(--line);
+  }
+
+  .cards li {
+    padding: 1.5rem 1.5rem 1.75rem 0;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: -1px;
+  }
+
+  /* One column on phones, three across from tablet width up */
+  @media (min-width: 44rem) {
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cards li + li {
+      padding-left: 1.5rem;
+      border-left: 1px solid var(--line);
+    }
+  }
+
+  h3 {
+    margin-block: 0.9rem 0.4rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.35;
+    letter-spacing: 0.02em;
+  }
+
+  .cards .muted {
+    font-size: 0.9375rem;
+    line-height: 1.55;
+  }
+</style>
