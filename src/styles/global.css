@@ -6,7 +6,8 @@
   --line: #27262a;
   --accent: #b9792f;
 
-  --font: "Avenir Next", Avenir, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  /* Jost is bundled with the site, so every device shows the same typeface */
+  --font: "Jost Variable", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --gutter: clamp(1.25rem, 5vw, 3rem);
   --max: 72rem;
 
