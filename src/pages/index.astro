@@ -1,16 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 
-// Cards become links when their pages are built.
-const featured = [
+// A card without an href has no page yet and renders as plain text.
+const featured: { label: string; title: string; text: string; href?: string }[] = [
   {
     label: 'Project',
     title: 'Perpetuity Machine',
+    href: '/projects/perpetuity-machine/',
     text: 'A persistent, permission-aware memory layer for organizations, designed to sit beneath AI models and agents. In design.',
   },
   {
     label: 'Project',
     title: 'Care Navigator',
+    href: '/projects/care-navigator/',
     text: 'Referral coordination for patients, caregivers and navigators, built on synthetic data.',
   },
   {
@@ -41,7 +43,7 @@ const featured = [
       {featured.map((item) => (
         <li>
           <p class="label accent">{item.label}</p>
-          <h3>{item.title}</h3>
+          <h3>{item.href ? <a href={item.href}>{item.title}</a> : item.title}</h3>
           <p class="muted">{item.text}</p>
         </li>
       ))}

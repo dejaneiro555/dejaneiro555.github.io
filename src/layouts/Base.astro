@@ -11,7 +11,7 @@ const siteName = 'Rio Gonzales';
 const pageTitle = title ? `${title} · ${siteName}` : siteName;
 
 // Add a page here once it exists, so the nav never links to a missing page.
-const navLinks: { href: string; label: string }[] = [];
+const navLinks: { href: string; label: string }[] = [{ href: '/projects/', label: 'Projects' }];
 
 const linkedIn = 'https://www.linkedin.com/in/rwgonzales';
 const gitHub = 'https://github.com/dejaneiro555';
@@ -36,7 +36,7 @@ const gitHub = 'https://github.com/dejaneiro555';
           <ul>
             {navLinks.map((link) => (
               <li>
-                <a href={link.href} aria-current={Astro.url.pathname === link.href ? 'page' : undefined}>
+                <a href={link.href} aria-current={Astro.url.pathname.startsWith(link.href) ? 'page' : undefined}>
                   {link.label}
                 </a>
               </li>
