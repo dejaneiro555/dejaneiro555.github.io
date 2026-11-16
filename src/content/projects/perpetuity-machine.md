@@ -14,11 +14,13 @@ The idea at its center: models are interchangeable, and the memory is the part t
 
 ## Why I'm building it
 
-I've worked in HR at four organizations and talked with people at many more. One problem followed me through every role and every conversation: people want to understand their role and how to do their best work, and organizations rarely have a reliable way to give them that.
+Humans became as capable as we are because we learned to pass knowledge on. Organizations are still bad at it. When someone leaves, what they knew usually leaves with them, because nobody had time to write it down.
 
-Compensation is the comparatively simple part. It comes down to allocation and budgeting. Training and development is harder. It involves every person, function, department and manager, and it differs for each organization and industry. In my experience it gets left to managers and teams to figure out, and they end up feeling lost, overloaded and unsupported.
+I've worked in HR at four organizations and saw the same thing in every one. People want to understand their role and how to do their best work. Training and development gets left to managers and teams, and they end up feeling lost, overloaded and unsupported.
 
-That thought is what led me here. An organization that reliably remembers what it knows and what it has done, with the evidence behind it, can support its people far better. And when someone turns out not to be the right fit, it can show that they were given the best support possible.
+Perpetuity Machine is meant to preserve that knowledge for the team: record work as it happens, remember it, and return it to a shared knowledge base. Procedures can be drafted from that record and approved by people. New hires and AI agents can then learn from the real work, so they get up to speed faster and the pressure on managers and teammates drops.
+
+This is about preserving knowledge, not monitoring people. Security and permissions come first, and people decide what becomes official.
 
 ## Where it stands
 

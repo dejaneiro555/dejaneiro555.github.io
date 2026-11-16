@@ -4,19 +4,19 @@ import Base from '../layouts/Base.astro';
 // A card without an href has no page yet and renders as plain text.
 const featured: { label: string; title: string; text: string; href?: string }[] = [
   {
-    label: 'Project',
+    label: 'People',
+    title: 'HR Command Center',
+    href: '/projects/hr-command-center/',
+    text: 'A multi-client HR operations workspace for requests, cases, documents and compliance follow-up.',
+  },
+  {
+    label: 'Software',
     title: 'Perpetuity Machine',
     href: '/projects/perpetuity-machine/',
-    text: 'A persistent, permission-aware memory layer for organizations, designed to sit beneath AI models and agents. In design.',
+    text: 'A memory layer for organizations, designed to sit beneath AI models and agents. Its working prototype is mini-perpetuity.',
   },
   {
-    label: 'Project',
-    title: 'Care Navigator',
-    href: '/projects/care-navigator/',
-    text: 'Referral coordination for patients, caregivers and navigators, built on synthetic data.',
-  },
-  {
-    label: 'Journey',
+    label: 'Hardware',
     title: 'Electrical Engineering at ASU',
     href: '/journey/',
     text: 'Starting January 2027, focusing on computer software and hardware.',
@@ -25,17 +25,17 @@ const featured: { label: string; title: string; text: string; href?: string }[] 
 ---
 
 <Base
-  description="Rio Gonzales: an HR Director returning to engineering, building software that helps organizations remember."
+  description="Rio Gonzales, an HR leader becoming an engineer: building AI memory systems so organizations keep what their people know."
 >
   <section class="hero wrap">
     <p class="label accent">People · Software · Hardware</p>
     <h1>
-      I’ve spent my career learning how organizations work. Now I’m building the systems
-      that <strong>help them remember</strong>.
+      When people leave, what they know leaves with them. I’m building systems <strong>so it doesn’t</strong>.
     </h1>
     <p class="lede muted">
-      I’m Rio Gonzales, an HR Director returning to engineering. I build software that gives organizations a lasting
-      memory, and in January 2027 I begin Electrical Engineering at ASU to learn the hardware underneath it.
+      I’m Rio Gonzales, an HR leader becoming an engineer. AI can finally give an organization a memory that outlasts
+      any one person. I’m building that software, and studying electrical engineering to understand the hardware AI
+      runs on.
     </p>
   </section>
 
