@@ -16,7 +16,7 @@ The idea at its center: models are interchangeable, and the memory is the part t
 
 Humans became as capable as we are because we learned to pass knowledge on. Organizations are still bad at it. When someone leaves, what they knew usually leaves with them, because nobody had time to write it down.
 
-I've worked in HR at four organizations and saw the same thing in every one. People want to understand their role and how to do their best work. Training and development gets left to managers and teams, and they end up feeling lost, overloaded and unsupported.
+In every HR role I've held, I saw the same thing. People want to understand their role and how to do their best work. Training and development gets left to managers and teams, and they end up feeling lost, overloaded and unsupported.
 
 Perpetuity Machine is meant to preserve that knowledge for the team: record work as it happens, remember it, and return it to a shared knowledge base. Procedures can be drafted from that record and approved by people. New hires and AI agents can then learn from the real work, so they get up to speed faster and the pressure on managers and teammates drops.
 
