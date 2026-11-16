@@ -16,6 +16,10 @@ HR Command Center is a workspace for an HR consultant and the authorized staff o
 - controlled documents and reviewed communications;
 - compliance follow-up and reporting.
 
+## Why I built it
+
+HR work is people's problems arriving from every direction: a leave request, a complaint, a missing document, a deadline. The hard part is rarely the rule. It is keeping track of who asked, what evidence exists, what happens next, and who is allowed to see it. HR Command Center puts that in one place and leaves the decisions to people.
+
 ## A deliberate boundary
 
 HR and the client keep decision authority. The system makes required evidence, next actions and unresolved exceptions visible. It does not present an unverified calculation or status as a final employment decision.

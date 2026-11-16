@@ -13,6 +13,10 @@ mini-perpetuity is a single-user memory layer that runs on your own machine. AI 
 
 It is an early build, not production software.
 
+## Why I'm building it
+
+mini-perpetuity is the same idea as Perpetuity Machine at the scale of one person. Before asking an organization to trust a system with what it knows, I wanted the smallest version that works, one I can use myself. It is where I test the parts that matter most: memory that persists, a human approving what becomes trusted, and a record of what happened.
+
 ## How it works
 
 - **Memory lives in PostgreSQL**, one database per instance.
