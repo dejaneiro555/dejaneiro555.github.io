@@ -10,7 +10,7 @@ A static website (see [architecture](../architecture/README.md)). Data: only wha
 
 | ID | Component | Threat (STRIDE) | Mitigation | Status |
 |---|---|---|---|---|
-| T1 | GitHub account | Spoofing / Tampering: someone with the owner's GitHub access pushes to `main` and defaces or replaces the site | Two-factor authentication on the GitHub account [U]; pull requests before `main` (process, not enforced) | partly |
+| T1 | GitHub account | Spoofing / Tampering: someone with the owner's GitHub access pushes to `main` and defaces or replaces the site | Two-factor authentication (authenticator app, recovery codes saved) on the GitHub account [V, owner-reported 2026-11-22, VB-01]; ruleset "Protect main" requires a pull request and the `docs` check, and blocks force pushes and deletion ([ADR 0006](../decisions/0006-protect-main-with-a-ruleset.md)) | ok |
 | T2 | Build pipeline | Tampering: a compromised third-party action (`withastro/action@v6`, `actions/checkout@v7`, `actions/deploy-pages@v5`, `actions/checkout@v4`) runs in the build. They are pinned to major-version tags, not commit SHAs | Workflows request minimal permissions (`contents: read`; `pages: write` and `id-token: write` only in deploy) [V] | accepted risk |
 | T3 | Dependencies | Tampering: a malicious npm package version is installed during the build | `package-lock.json` is committed [V]; two direct dependencies only (`astro`, `@fontsource-variable/jost`) | partly |
 | T4 | Content | Information disclosure: private details (contact data, employer-internal material) are published by mistake | Owner review before merge; no email address on the site [V: `contact.astro` links LinkedIn and GitHub only] | partly |
@@ -20,7 +20,7 @@ A static website (see [architecture](../architecture/README.md)). Data: only wha
 
 ## Q3. What are we going to do about it?
 
-Open questions for the owner, not decisions: enable branch protection on `main`; consider pinning actions to commit SHAs; enable private vulnerability reporting (see `SECURITY.md`).
+Done: two-factor on GitHub and Vercel, and the `main` ruleset (2026-11-22). Open questions for the owner, not decisions: consider pinning actions to commit SHAs; enable private vulnerability reporting (see `SECURITY.md`).
 
 ## Q4. Did we do a good enough job?
 
