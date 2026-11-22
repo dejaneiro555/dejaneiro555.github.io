@@ -20,7 +20,7 @@ The owner wrote `.devcontainer/devcontainer.json` (four properties), ADR 0005 re
 
 ## What is still open
 
-- VB-04: whether forwarded ports are private by default, and what this one showed.
+- VB-04 is answered for this codespace (port 4321 was Private), but GitHub's documentation of the default was not opened.
 - `npm ci` running was inferred from Astro starting; the creation log was not read.
 
 ## Exercise

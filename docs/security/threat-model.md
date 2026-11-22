@@ -16,7 +16,7 @@ A static website (see [architecture](../architecture/README.md)). Data: only wha
 | T4 | Content | Information disclosure: private details (contact data, employer-internal material) are published by mistake | Owner review before merge; no email address on the site [V: `contact.astro` links LinkedIn and GitHub only] | partly |
 | T5 | Repository | Information disclosure: a secret is committed. The site needs none today | `.gitignore` excludes `.env` and `.env.production` [V] | ok |
 | T6 | Dev container | Tampering: a compromised base image or tag update runs code in the codespace, which can push to the repository with the owner's access | Image from Microsoft's registry, pinned to major tag `26` (not `latest`) [V: `.devcontainer/devcontainer.json`]; no secrets stored in Codespaces for this repository | accepted risk |
-| T7 | Codespaces | Information disclosure: a forwarded port is made public, exposing the dev server | Ports are private by default [U: not checked in GitHub's docs, VB-04]; the dev server serves only the public site's content | partly |
+| T7 | Codespaces | Information disclosure: a forwarded port is made public, exposing the dev server | Port 4321 showed as Private in the codespace tested on 2026-11-22 [V, VB-04]; the dev server serves only the public site's content | ok |
 
 ## Q3. What are we going to do about it?
 
