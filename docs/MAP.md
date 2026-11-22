@@ -36,7 +36,9 @@ Every Markdown file in the project, with its title, ADR status, and the files th
 - [docs/decisions/0003-bundle-the-jost-font.md](decisions/0003-bundle-the-jost-font.md): Bundle the Jost font with @fontsource-variable/jost (status: accepted)
   - Linked from: [docs/decisions/README.md](decisions/README.md)
 - [docs/decisions/0004-docs-check-in-ci.md](decisions/0004-docs-check-in-ci.md): Check in CI that code changes come with their docs (status: accepted)
-  - Linked from: [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
+  - Linked from: [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md), [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
+- [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md): Develop the site in a dev container, Codespaces first (status: proposed)
+  - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/README.md](decisions/README.md), [docs/security/threat-model.md](security/threat-model.md)
 - [docs/decisions/README.md](decisions/README.md): Architecture Decision Records
   - Linked from: [docs/README.md](README.md)
 - [docs/decisions/adr-template.md](decisions/adr-template.md): \<Short title: the problem solved and the solution chosen\> (status: proposed)

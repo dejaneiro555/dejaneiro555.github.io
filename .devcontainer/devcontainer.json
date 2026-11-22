@@ -1,0 +1,7 @@
+{
+  // Label shown in Codespaces
+  "name": "dejaneiro555.github.io",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:26",
+  "forwardPorts": [4321],
+  "postCreateCommand": "npm ci"
+}

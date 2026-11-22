@@ -15,3 +15,4 @@ One ADR per significant decision (a new dependency, a storage or security choice
 | [0002](0002-host-on-github-pages-via-actions.md) | Host on GitHub Pages, deployed by GitHub Actions on every push to main | accepted |
 | [0003](0003-bundle-the-jost-font.md) | Bundle the Jost font with @fontsource-variable/jost | accepted |
 | [0004](0004-docs-check-in-ci.md) | Check in CI that code changes come with their docs | accepted |
+| [0005](0005-dev-container-for-codespaces.md) | Develop the site in a dev container, Codespaces first | proposed |

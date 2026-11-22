@@ -4,7 +4,7 @@
 
 ## Q1. What are we working on?
 
-A static website (see [architecture](../architecture/README.md)). Data: only what the site deliberately publishes (name, career history, project write-ups, LinkedIn and GitHub links). No user input, accounts, cookies, forms or server code. Data flow: owner → GitHub repository → GitHub Actions build (npm packages, third-party actions) → GitHub Pages → public visitors.
+A static website (see [architecture](../architecture/README.md)). Data: only what the site deliberately publishes (name, career history, project write-ups, LinkedIn and GitHub links). No user input, accounts, cookies, forms or server code. Data flow: owner → GitHub repository → GitHub Actions build (npm packages, third-party actions) → GitHub Pages → public visitors. Development (added 2026-11-21, [ADR 0005](../decisions/0005-dev-container-for-codespaces.md)): GitHub Codespaces builds a container from Microsoft's image `mcr.microsoft.com/devcontainers/javascript-node:26`, runs `npm ci`, and holds a clone of the repository with the owner's GitHub access.
 
 ## Q2. What can go wrong?
 
@@ -15,6 +15,8 @@ A static website (see [architecture](../architecture/README.md)). Data: only wha
 | T3 | Dependencies | Tampering: a malicious npm package version is installed during the build | `package-lock.json` is committed [V]; two direct dependencies only (`astro`, `@fontsource-variable/jost`) | partly |
 | T4 | Content | Information disclosure: private details (contact data, employer-internal material) are published by mistake | Owner review before merge; no email address on the site [V: `contact.astro` links LinkedIn and GitHub only] | partly |
 | T5 | Repository | Information disclosure: a secret is committed. The site needs none today | `.gitignore` excludes `.env` and `.env.production` [V] | ok |
+| T6 | Dev container | Tampering: a compromised base image or tag update runs code in the codespace, which can push to the repository with the owner's access | Image from Microsoft's registry, pinned to major tag `26` (not `latest`) [V: `.devcontainer/devcontainer.json`]; no secrets stored in Codespaces for this repository | accepted risk |
+| T7 | Codespaces | Information disclosure: a forwarded port is made public, exposing the dev server | Ports are private by default [U: not checked in GitHub's docs, VB-04]; the dev server serves only the public site's content | partly |
 
 ## Q3. What are we going to do about it?
 
