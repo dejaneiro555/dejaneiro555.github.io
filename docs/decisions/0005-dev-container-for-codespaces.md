@@ -1,5 +1,5 @@
 ---
-status: proposed
+status: accepted
 date: 2026-11-21
 decision-makers: Rio Gonzales (owner)
 ---
@@ -43,7 +43,14 @@ Chosen option: "a dev container using Microsoft's Node image", because it is the
 
 ### Confirmation
 
-Accept this ADR once a codespace built from `.devcontainer/devcontainer.json` runs `npm run dev` and the site opens on forwarded port 4321. Until then it stays `proposed`. Open: whether Astro's dev server is reachable through port forwarding without `--host` (VB-03).
+Accept this ADR once a codespace built from `.devcontainer/devcontainer.json` runs `npm run dev` and the site opens on forwarded port 4321.
+
+Tested 2026-11-22 (UTC) on branch `chore/devcontainer` at `c558142`, in a 2-core codespace created from the browser [V, terminal output from the owner]:
+
+* Codespaces reported "a custom image defined in your devcontainer.json file".
+* Inside `/workspaces/dejaneiro555.github.io`, `node -v` printed `v26.13.1`.
+* `npm run dev` started Astro v7.4.12 on `http://localhost:4321/`, and the browser loaded the home page through the forwarded port (`[200] /` logged twice). No `--host` flag was needed (closes VB-03).
+* `npm ci` is inferred to have run, because `astro dev` found its dependencies; the build log itself was not checked [Inference].
 
 ## Pros and Cons of the Options
 

@@ -37,8 +37,8 @@ Every Markdown file in the project, with its title, ADR status, and the files th
   - Linked from: [docs/decisions/README.md](decisions/README.md)
 - [docs/decisions/0004-docs-check-in-ci.md](decisions/0004-docs-check-in-ci.md): Check in CI that code changes come with their docs (status: accepted)
   - Linked from: [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md), [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
-- [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md): Develop the site in a dev container, Codespaces first (status: proposed)
-  - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/README.md](decisions/README.md), [docs/security/threat-model.md](security/threat-model.md)
+- [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md): Develop the site in a dev container, Codespaces first (status: accepted)
+  - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/README.md](decisions/README.md), [docs/progress/README.md](progress/README.md), [docs/security/threat-model.md](security/threat-model.md), [docs/verification-backlog.md](verification-backlog.md)
 - [docs/decisions/README.md](decisions/README.md): Architecture Decision Records
   - Linked from: [docs/README.md](README.md)
 - [docs/decisions/adr-template.md](decisions/adr-template.md): \<Short title: the problem solved and the solution chosen\> (status: proposed)
@@ -62,6 +62,8 @@ Every Markdown file in the project, with its title, ADR status, and the files th
 ## docs/learning
 
 - [docs/learning/0001-docs-system-setup.md](learning/0001-docs-system-setup.md): Learning Note 0001: setting up the documentation system
+  - Linked from: [docs/learning/README.md](learning/README.md), [docs/progress/README.md](progress/README.md)
+- [docs/learning/0002-dev-container.md](learning/0002-dev-container.md): Learning Note 0002: a dev container for Codespaces
   - Linked from: [docs/learning/README.md](learning/README.md), [docs/progress/README.md](progress/README.md)
 - [docs/learning/README.md](learning/README.md): Learning Notes
   - Linked from: [docs/README.md](README.md), [docs/governance/README.md](governance/README.md)

@@ -29,4 +29,4 @@ See [the threat model](../security/threat-model.md).
 
 ## Development environment
 
-`.devcontainer/devcontainer.json` defines a dev container for GitHub Codespaces: Node 26 image, port 4321 forwarded, `npm ci` after creation ([ADR 0005](../decisions/0005-dev-container-for-codespaces.md), proposed). Not yet tested in a codespace.
+`.devcontainer/devcontainer.json` defines a dev container for GitHub Codespaces: Node 26 image, port 4321 forwarded, `npm ci` after creation ([ADR 0005](../decisions/0005-dev-container-for-codespaces.md)). Tested in a codespace on 2026-11-22.

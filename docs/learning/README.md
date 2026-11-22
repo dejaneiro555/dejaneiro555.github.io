@@ -5,3 +5,4 @@ One short note per step of work, written when the step is finished: what was don
 Contents:
 
 - [0001-docs-system-setup.md](0001-docs-system-setup.md): setting up the documentation system.
+- [0002-dev-container.md](0002-dev-container.md): a dev container for Codespaces.
