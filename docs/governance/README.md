@@ -16,7 +16,7 @@ Not decided yet. Question for the owner. A likely candidate, not adopted: nothin
 
 ## Process
 
-- Work happens on a branch and reaches `main` through a pull request; a push to `main` deploys the site ([ADR 0002](../decisions/0002-host-on-github-pages-via-actions.md)).
+- Work happens on a branch and reaches `main` through a pull request; a push to `main` deploys the site ([ADR 0002](../decisions/0002-host-on-github-pages-via-actions.md)). The "Protect main" ruleset enforces this ([ADR 0006](../decisions/0006-protect-main-with-a-ruleset.md)).
 - Commit messages follow Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`, `ci:`) [V: `git log`, 2026-11-21].
 - Every change with code includes a `CHANGELOG.md` entry, and every new dependency or hosting/CI choice an ADR; the docs check in CI enforces both ([ADR 0004](../decisions/0004-docs-check-in-ci.md)).
 - A finished step gets a Learning Note in [learning/](../learning/README.md) and a row in [progress/](../progress/README.md).

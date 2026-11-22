@@ -32,13 +32,15 @@ Every Markdown file in the project, with its title, ADR status, and the files th
 - [docs/decisions/0001-build-the-site-with-astro.md](decisions/0001-build-the-site-with-astro.md): Build the personal site as a static site with Astro (status: accepted)
   - Linked from: [docs/decisions/README.md](decisions/README.md)
 - [docs/decisions/0002-host-on-github-pages-via-actions.md](decisions/0002-host-on-github-pages-via-actions.md): Host on GitHub Pages, deployed by GitHub Actions on every push to main (status: accepted)
-  - Linked from: [SECURITY.md](../SECURITY.md), [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
+  - Linked from: [SECURITY.md](../SECURITY.md), [docs/decisions/0006-protect-main-with-a-ruleset.md](decisions/0006-protect-main-with-a-ruleset.md), [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
 - [docs/decisions/0003-bundle-the-jost-font.md](decisions/0003-bundle-the-jost-font.md): Bundle the Jost font with @fontsource-variable/jost (status: accepted)
   - Linked from: [docs/decisions/README.md](decisions/README.md)
 - [docs/decisions/0004-docs-check-in-ci.md](decisions/0004-docs-check-in-ci.md): Check in CI that code changes come with their docs (status: accepted)
-  - Linked from: [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md), [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
+  - Linked from: [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md), [docs/decisions/0006-protect-main-with-a-ruleset.md](decisions/0006-protect-main-with-a-ruleset.md), [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md)
 - [docs/decisions/0005-dev-container-for-codespaces.md](decisions/0005-dev-container-for-codespaces.md): Develop the site in a dev container, Codespaces first (status: accepted)
   - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/README.md](decisions/README.md), [docs/progress/README.md](progress/README.md), [docs/security/threat-model.md](security/threat-model.md), [docs/verification-backlog.md](verification-backlog.md)
+- [docs/decisions/0006-protect-main-with-a-ruleset.md](decisions/0006-protect-main-with-a-ruleset.md): Protect main with a ruleset: pull request and docs check required (status: accepted)
+  - Linked from: [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md), [docs/security/threat-model.md](security/threat-model.md)
 - [docs/decisions/README.md](decisions/README.md): Architecture Decision Records
   - Linked from: [docs/README.md](README.md)
 - [docs/decisions/adr-template.md](decisions/adr-template.md): \<Short title: the problem solved and the solution chosen\> (status: proposed)
@@ -85,7 +87,7 @@ Every Markdown file in the project, with its title, ADR status, and the files th
 - [docs/security/README.md](security/README.md): Security
   - Linked from: [docs/README.md](README.md)
 - [docs/security/threat-model.md](security/threat-model.md): Threat model
-  - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/0001-build-the-site-with-astro.md](decisions/0001-build-the-site-with-astro.md), [docs/decisions/0002-host-on-github-pages-via-actions.md](decisions/0002-host-on-github-pages-via-actions.md), [docs/decisions/0004-docs-check-in-ci.md](decisions/0004-docs-check-in-ci.md), [docs/security/README.md](security/README.md)
+  - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/0001-build-the-site-with-astro.md](decisions/0001-build-the-site-with-astro.md), [docs/decisions/0002-host-on-github-pages-via-actions.md](decisions/0002-host-on-github-pages-via-actions.md), [docs/decisions/0004-docs-check-in-ci.md](decisions/0004-docs-check-in-ci.md), [docs/decisions/0006-protect-main-with-a-ruleset.md](decisions/0006-protect-main-with-a-ruleset.md), [docs/security/README.md](security/README.md)
 
 ## docs/tutorials
 
