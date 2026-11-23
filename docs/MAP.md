@@ -41,7 +41,7 @@ Every Markdown file in the project, with its title, ADR status, and the files th
   - Linked from: [docs/architecture/README.md](architecture/README.md), [docs/decisions/README.md](decisions/README.md), [docs/progress/README.md](progress/README.md), [docs/security/threat-model.md](security/threat-model.md), [docs/verification-backlog.md](verification-backlog.md)
 - [docs/decisions/0006-protect-main-with-a-ruleset.md](decisions/0006-protect-main-with-a-ruleset.md): Protect main with a ruleset: pull request and docs check required (status: accepted)
   - Linked from: [docs/decisions/README.md](decisions/README.md), [docs/governance/README.md](governance/README.md), [docs/security/threat-model.md](security/threat-model.md)
-- [docs/decisions/0007-claude-setup-committed-for-cloud-sessions.md](decisions/0007-claude-setup-committed-for-cloud-sessions.md): Commit the owner's Claude setup so cloud sessions load it (status: proposed)
+- [docs/decisions/0007-claude-setup-committed-for-cloud-sessions.md](decisions/0007-claude-setup-committed-for-cloud-sessions.md): Commit the owner's Claude setup so cloud sessions load it (status: accepted)
   - Linked from: [docs/decisions/README.md](decisions/README.md), [docs/security/threat-model.md](security/threat-model.md)
 - [docs/decisions/README.md](decisions/README.md): Architecture Decision Records
   - Linked from: [docs/README.md](README.md)
