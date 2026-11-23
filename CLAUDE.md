@@ -11,6 +11,8 @@ Rio Gonzales's personal portfolio site: Astro, static output, hosted on GitHub P
 
 ## Rules for this repository
 
+- The owner's general rules and skills are committed in `.claude/` (ADR 0007); `.claude/rules/repo.md` says which instruction wins.
+
 - This is a learning project: explain the why, let the owner write key parts, then review.
 - Pushing to `main` deploys the live site. Work on a branch and open a pull request.
 - Code changes need a `CHANGELOG.md` entry; new dependencies, hosting or CI choices need an ADR in `docs/decisions/`.

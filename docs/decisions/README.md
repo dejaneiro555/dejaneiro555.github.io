@@ -17,3 +17,4 @@ One ADR per significant decision (a new dependency, a storage or security choice
 | [0004](0004-docs-check-in-ci.md) | Check in CI that code changes come with their docs | accepted |
 | [0005](0005-dev-container-for-codespaces.md) | Develop the site in a dev container, Codespaces first | accepted |
 | [0006](0006-protect-main-with-a-ruleset.md) | Protect main with a ruleset: pull request and docs check required | accepted |
+| [0007](0007-claude-setup-committed-for-cloud-sessions.md) | Commit the owner's Claude setup so cloud sessions load it | proposed |

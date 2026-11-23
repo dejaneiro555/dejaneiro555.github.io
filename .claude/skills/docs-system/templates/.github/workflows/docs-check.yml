@@ -1,0 +1,18 @@
+# Installed by the docs-system skill (/docs-system setup). Fails a pull request whose code changes
+# skip the changelog or an ADR. "Docs: none needed - <reason>" in a commit message allows it.
+name: Docs check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # the check compares this branch with its base
+      - run: python3 scripts/docs_audit.py --root . --changed "origin/${{ github.base_ref }}"
