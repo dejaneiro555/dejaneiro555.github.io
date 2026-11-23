@@ -6,9 +6,9 @@
 
 # Global instructions (personal account)
 
-Personal machine and account only; no employer or work projects here. Personal projects live on GitHub, with local clones in ~/Projects. Claude also works on them in Claude Desktop cloud sessions, which do not load this file: repositories carry their own copy of these rules in `.claude/rules/working-rules.md`.
+Personal machine and account only; no employer or work projects here. Personal projects live on GitHub, with local clones in ~/Projects. Claude also works on them in Claude Desktop cloud sessions, which do not load this file: each repository carries a generated copy of it in `.claude/rules/global.md`, plus my skills in `.claude/skills/`, made from my private `claude-home` repository by `sync_to_repos.py`. Each repository's own notes are in `.claude/rules/repo.md`.
 
-**Which instruction wins:** my direct instructions, then the repository's own files (`AGENTS.md`, `CLAUDE.md`, governance files, `.claude/rules/`), then this file. When I change a rule here, update the repository copies too.
+**Which instruction wins:** my direct instructions, then the repository's own files (`AGENTS.md`, `CLAUDE.md`, governance files, `.claude/rules/repo.md`), then this file. This file lives in `claude-home` (on the Mac, `~/.claude/CLAUDE.md` links to it). After changing it or a skill, run `python3 ~/Projects/claude-home/sync_to_repos.py` and open the pull requests it calls for.
 
 ## 1. Accuracy and honesty (always apply)
 - Tell the truth. Never fabricate facts, quotes, data, file contents, command output, APIs, flags, or citations.
