@@ -1,5 +1,5 @@
 ---
-status: proposed
+status: accepted
 date: 2026-11-23
 decision-makers: Rio Gonzales (owner)
 ---
@@ -35,4 +35,6 @@ Chosen option: "commit generated copies", because it is the only option that loa
 
 ### Confirmation
 
-A cloud session on this repository lists `CLAUDE.md`, `.claude/rules/global.md`, `.claude/rules/repo.md` and the four skills, and its Stop hook runs. Not run yet.
+A cloud session on this repository lists `CLAUDE.md`, `.claude/rules/global.md`, `.claude/rules/repo.md` and the four skills, and its Stop hook runs.
+
+Tested 2026-11-23 in a read-only cloud session at `e7abeac` (the session's report, pasted by the owner) [V]: `CLAUDE.md`, `.claude/rules/global.md` and `.claude/rules/repo.md` loaded, with no "About me" section; all four skills listed; the Stop hook is configured and exited 0; docs audit 0 errors; Node v22.23.5; `npm run build` built 9 pages. The file's "Generated from" comment did not reach the session, most likely because HTML comments are dropped when rules load [Inference]. Accepted by the owner on 2026-11-23.

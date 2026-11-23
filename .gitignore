@@ -25,3 +25,8 @@ pnpm-debug.log*
 
 # Graphify local code graph (rebuilt by git hooks)
 graphify-out/
+
+# Python bytecode (the docs-system Stop hook imports its script; ADR on the committed Claude setup)
+__pycache__/
+# Personal Claude Code settings, never shared (the Mac ignores it globally; cloud sessions do not)
+.claude/settings.local.json
