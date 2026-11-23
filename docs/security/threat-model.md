@@ -17,6 +17,7 @@ A static website (see [architecture](../architecture/README.md)). Data: only wha
 | T5 | Repository | Information disclosure: a secret is committed. The site needs none today | `.gitignore` excludes `.env` and `.env.production` [V] | ok |
 | T6 | Dev container | Tampering: a compromised base image or tag update runs code in the codespace, which can push to the repository with the owner's access | Image from Microsoft's registry, pinned to major tag `26` (not `latest`) [V: `.devcontainer/devcontainer.json`]; no secrets stored in Codespaces for this repository | accepted risk |
 | T7 | Codespaces | Information disclosure: a forwarded port is made public, exposing the dev server | Port 4321 showed as Private in the codespace tested on 2026-11-22 [V, VB-04]; the dev server serves only the public site's content | ok |
+| T8 | Claude cloud sessions | Tampering / Information disclosure: Claude runs in Anthropic's cloud on a clone of this public repository, with GitHub access through Anthropic's proxy; committed rules and skills steer what it does | No secrets in this repository's cloud environment; the committed Claude setup is reviewed in pull requests like code ([ADR 0007](../decisions/0007-claude-setup-committed-for-cloud-sessions.md)); personal details left out of the public copy | partly |
 
 ## Q3. What are we going to do about it?
 
